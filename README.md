@@ -30,3 +30,12 @@ export GOOGLESERVICE_INFO_PLIST_PATH="$HOME/secrets/GoogleService-Info.plist"
 
 Use `GoogleService-Info.plist.example` as a placeholder/template (it contains **no real keys**).
 
+## Dependencies (CocoaPods)
+
+This repo does **not** commit `Pods/` (to avoid leaking vendor code and false-positive secret scans).
+
+After cloning:
+
+```bash
+pod install
+```
